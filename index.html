@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tairāwhiti Community Law</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #fff;
+      padding: 10px 0 0 0;
+      text-align: center;
+    }
+    header img {
+      max-height: 220px;
+    }
+    nav {
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 15px 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      background-color: #fff;
+      font-weight: bold;
+      color: #000;
+      transition: background 0.2s, color 0.2s;
+    }
+    nav a:hover {
+      background-color: #69b393;
+      color: #fff;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      background-color: #eaeaea;
+      gap: 40px;
+    }
+    .hero-text {
+      flex: 1 1 300px;
+      min-width: 250px;
+      max-width: 500px;
+      text-align: left;
+    }
+    .hero-text h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero-text p {
+      font-size: 18px;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #69b393;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .cta-button:hover {
+      background-color: #4e8c72;
+    }
+    .hero-img img {
+      max-width: 400px;
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+      background: #fff;
+      margin: 30px 0 0 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .section h2 {
+      margin-top: 0;
+      color: #2d5c4a;
+    }
+    .map {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .team {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      background: #f9f9f9;
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 30px auto 0 auto;
+      padding: 40px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .team img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 10px;
+      border: 3px solid #69b393;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .links {
+      margin-top: 20px;
+    }
+    .links a {
+      color: #00c3ff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    .links a:hover {
+      color: #2d5c4a;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 10px;
+      }
+      .section, .team {
+        padding: 25px 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/newlogo.png" alt="Tairāwhiti Community Law Logo">
+  </header>
+
+  <nav>
+    <a href="#legal">Legal Services</a>
+    <a href="#clinics">Clinics</a>
+    <a href="#resources">Resources & Articles</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Free Legal Advice</h1>
+      <p>We offer help with family disputes, protection orders, child visitation, wills, Māori land issues, and whānau trusts. Our team is here to help.</p>
+      <a href="contact.html" class="cta-button">Contact Us</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/building.jpeg" alt="building">
+    </div>
+  </section>
+
+  <section class="section" id="legal">
+    <h2>What We Do</h2>
+    <p>We support whānau in need with services including:
+      <br>Family Disputes, Protection Orders, Parenting & Visitation,
+      <br>Wills, End-of-life Planning, Māori Land & Whānau Trusts.
+    </p>
+    <a href="legal.html" class="cta-button">Learn More</a>
+  </section>
+
+  <section class="section" id="about">
+    <h2>Who Are We?</h2>
+    <p>Tairāwhiti Community Law is dedicated to making legal services accessible to everyone in our rohe. Grounded in the values of manaakitanga and equity, we work to support our communities across Gisborne, East Coast and Wairoa.</p>
+    <div class="links">
+      <a href="https://www.justice.govt.nz" target="_blank">Ministry of Justice</a>
+      <a href="https://communitylaw.org.nz" target="_blank">CommunityLaw.org.nz</a>
+    </div>
+  </section>
+
+  <section class="section" id="clinics">
+    <h2>Clinic Locations</h2>
+    <img src="images/map.png" alt="Map" class="map">
+    <!-- Optionally embed Google Map here -->
+  </section>
+
+  <section class="team">
+    <h2 style="flex-basis:100%;text-align:center;">Meet the Team</h2>
+    <img src="images/patula.jpeg" alt="Patula">
+    <img src="images/lee.jpeg" alt="Lee">
+    <img src="images/lou.jpeg" alt="Lou">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tairāwhiti Community Law. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
