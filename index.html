@@ -9,10 +9,26 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
-    }
-    header {
       background-color: #fff;
+    }
+
+    .tiki-container {
+      position: absolute;
+      top: 10px;
+      right: 100px;
+      text-align: center;
+    }
+    .tiki-img {
+      height: 220px;
+    }
+    .tiki-caption {
+      font-size: 12px;
+      max-width: 150px;
+      margin-top: 5px;
+    }
+    
+    header {
+      background-color: #fff; /* Ensure header is white */
       padding: 10px 0 0 0;
       text-align: center;
     }
@@ -20,7 +36,7 @@
       max-height: 220px;
     }
     nav {
-      background-color: #ddd;
+      background-color: #fff; /* Make nav background white */
       display: flex;
       justify-content: center;
       gap: 15px;
@@ -47,7 +63,7 @@
       justify-content: center;
       align-items: center;
       padding: 40px 20px;
-      background-color: #eaeaea;
+      background-color: #fff; /* Changed from #eaeaea to #fff */
       gap: 40px;
     }
     .hero-text {
@@ -148,26 +164,32 @@
       text-align: center;
       margin-top: 40px;
     }
-    @media (max-width: 900px) {
-      .hero {
-        flex-direction: column;
-        gap: 20px;
-        padding: 30px 10px;
-      }
-      .section, .team {
-        padding: 25px 5px;
-      }
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
     }
-  </style>
+  }
+</style>
 </head>
 <body>
 
-  <header>
-    <img src="images/newlogo.png" alt="Tairāwhiti Community Law Logo">
+  <header style="position: relative; height: 120px; padding: 10px;">
+    <!-- Flax image on the left, larger -->
+    <div style="position: absolute; top: 5px; left: 5px; text-align: center;">
+      <img src="images/flax.png" alt="Harakeke flax" style="height: 207px;">
+      <p style="font-size: 12px; max-width: 150px; margin-top: 5px;">
+        Harakeke – symbolising whānau, strength, and unity in Māori culture.
+      </p>
+    </div>
+
+    <!-- Centered logo below header content -->
+    <div style="text-align: center; margin-top: 10px;">
+      <img src="images/newlogo.png" alt="Tairāwhiti Community Law Logo" style="width: 1000px; max-height: 120px; height: auto;">
+    </div>
   </header>
 
   <nav>
-    <a href="#legal">Legal Services</a>
+    <a href="legal.html">Legal Services</a>
     <a href="#clinics">Clinics</a>
     <a href="#resources">Resources & Articles</a>
     <a href="#about">About</a>
@@ -186,7 +208,7 @@
 
   <section class="section" id="legal">
     <h2>What We Do</h2>
-    <p>We support whānau in need with services including:
+    <p>Tairawhiti Community Law Centre (TCLC) provides free legal advice, assistance, and representation to people in the Tairawhiti region who cannot afford legal services or qualify for legal aid. They also offer free legal information and education to the community. Their services cover areas like money troubles, housing, employment, family matters, and health-related issuesWe support whānau in need with services including:
       <br>Family Disputes, Protection Orders, Parenting & Visitation,
       <br>Wills, End-of-life Planning, Māori Land & Whānau Trusts.
     </p>
@@ -195,9 +217,9 @@
 
   <section class="section" id="about">
     <h2>Who Are We?</h2>
-    <p>Tairāwhiti Community Law is dedicated to making legal services accessible to everyone in our rohe. Grounded in the values of manaakitanga and equity, we work to support our communities across Gisborne, East Coast and Wairoa.</p>
+    <p> The Tairawhiti Community Law Centre delivers free legal services (which includes free legal information and law related education to all, and free legal advice, assistance and limited representation) to those people who meet our financial criteria to the community of Tairawhiti which are accessible and which nurture and maintain the manner and dignity of all persons that access those services</p>
     <div class="links">
-      <a href="https://www.justice.govt.nz" target="_blank">Ministry of Justice</a>
+      <a href="https://www.justice.govt.nz" target="_blank" rel="noopener">Ministry of Justice</a>
       <a href="https://communitylaw.org.nz" target="_blank">CommunityLaw.org.nz</a>
     </div>
   </section>
@@ -205,7 +227,6 @@
   <section class="section" id="clinics">
     <h2>Clinic Locations</h2>
     <img src="images/map.png" alt="Map" class="map">
-    <!-- Optionally embed Google Map here -->
   </section>
 
   <section class="team">
